@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            yellow: '#fecc02',
+            offBlack: '#131313',
+            gray: '#4e4e4e',
+          },
+          fontFamily:{
+            bebas:['Bebas Neue','cursive'],
+            montserrat:['Montserrat','sans-serif'],
+          },
+          backgroundImage:{
+            banner:"url('./images/banner.jpg')"
+          },
+        },
+      },
+    };
+  </script>
+  <title>Tailwind</title>
+</head>
+<body>
+  <nav class="flex justify-between items-center px-6 md:px-24 lg:px-52 h-20 bg-white font-bebas ">
+    <h1 class="text-3xl">Hellow Movie World</h1>
+    <ul class="flex gap-3 text-lg">
+      <li>About us</li>
+      <li>Our movies</li>
+      <li>Services</li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="bg-banner bg-cover bg-red-200 h-screen pt-25 flex items-center">
+      <div class="ml-20 font-bebas">
+        <p class="uppercase font-bold">Movie Production Studio</p>
+        <h1>Films Made to Prefection</h1>
+        <p class="font-montserrat">
+    Loremharum vero fuga, architecto, consequuntur reiciendis asperiores nisi odit et corporis.</p>
+        <button class="mt-5 text-xl text-white hover:bg-red-500 hover:text-black hover:border-red-500 border-2 transition ease-in-out py-2 px-5 font-bebas">Discover More</button>
+      </div>
+      </section>
+
+
+      <section class="m-20 border-2">
+        <div class="lg:flex">
+        <div class="bg-[url(./images/camera-man.jpg)] bg-cover h-[300px]  md:h-[400px] lg:w-2/4 bg-center m-10  items-end flex justify-center"> 
+          <h1 class="bg-white p-5 rounded -mb-6 shadow-md shadow-gray">25 YEARS OF EXPERIENC</h1> </div>
+          <div class="lg:w-2/4 m-10">
+            <p class="font-bold text-3xl mb-5">ABOUT US</p>
+            <h1 class="text-xl font-bold mb-8"> Filming Experience Just Got Better</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, rem nesciunt! Natus iusto maxime saepe molestiae placeat. Dignissimos autem tempore placeat iusto quidem quo, deserunt nulla earum, laborum neque natus?</p>
+            <button class="mt-5 text-xl text-black hover:bg-red-500 hover:text-black hover:border-red-500 border-2 transition ease-in-out py-2 px-5 font-bebas">Discover More</button>
+          </div>
+        </div>
+      </section>
+      <!-- movies -->
+
+ <section class="bg-stone-400 h-full p-10">
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+    <div class="border-2 h-[500px] md:h-[500px] lg:h-[350px] border-white rounded p-5">
+      <div class="bg-[url('./images/inception.jpg')] w-full h-full bg-cover bg-center "> </div>
+    </div>
+    <div class="border-2 h-[500px] md:h-[500px] lg:h-[350px] border-white rounded p-5">
+      <div class="bg-[url('./images/interstellar.jpg')] w-full h-full bg-cover bg-center">
+ </div>
+    </div>
+    <div class="border-2  h-[500px] md:h-[500px] lg:h-[350px] border-white rounded p-5">
+<div class="bg-[url('./images/tenet.jpg')] w-full h-full bg-cover bg-center">
+</div>
+    </div>
+    <div class="border-2  h-[500px] md:h-[500px] lg:h-[350px] border-white rounded p-5">
+      <div class="bg-[url('./images/fractured.jpg')] 
+       w-full h-full bg-cover bg-center">
+      </div>
+    </div>
+  </div>
+   </section>
+
+  </main>
+</body>
+</html>
